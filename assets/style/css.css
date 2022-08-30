@@ -21,17 +21,223 @@
 
 /* Estrutura do site */
 
+/* Top-Bar */
+
 .topbar {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0;
-    gap: 742px;
 
     position: relative;
     top: 0;
+    height: 7em;
 
     background: #8B54FF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.topbar a {
+    text-decoration: none;
+}
+
+.logo-top {
+    display: flex;
+}
+
+.logo-top img {
+    width: 200px;
+}
+
+.logo-top span {
+    font-family: 'Marvel', sans-serif;
+    color: #fff;
+    font-size: 45px;
+    position: relative;
+    top: 1.7em;
+    left: -1.6em;
+}
+
+.topbar .nav a {
+    color: #fff;
+    transition: 1s;
+}
+
+.topbar .nav{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-around;
+    width: 15em;
+    font-size: 32px;
+    font-family: 'Marvel', sans-serif;
+}
+
+.topbar .nav a:hover {
+    color: #341f61;
+}
+
+/* Section Home */
+
+#Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Home .main-photo {
+    margin-top: 7em;
+    box-shadow: 45px -45px 1px #8B54FF;
+}
+
+#Home .details {
+    position: absolute;
+    right: 0;
+    top: 55em;
+    z-index: -1;
+}
+
+#Home .texts {
+    z-index: 999;
+    text-align: center;
+}
+
+#Home .texts h1 {
+    font-family: 'Anton', sans-serif;
+    font-size: 75px;
+    color: #8B54FF;
+    letter-spacing: 4px;
+}
+
+#Home .texts h3 {
+    font-family: 'Bayon', sans-serif;
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin-top: -20px;
+}
+
+#Home .texts h5 {
+    font-family: 'Caveat', cursive;
+    font-size: 45px;
+    margin-top: -10px;
+}
+
+/* Section Dentista */
+
+#Dentista {
+    margin-top: 7em;
+    background: #8B54FF;
+    display: flex;
+    align-items: center;
+}
+
+#Dentista .main {
+    display: flex;
+    align-items: center;
+    margin-top: 7em;
+}
+
+#Dentista .image {
+    margin-left: 15em;
+}
+
+#Dentista .texts {
+    text-align: center;
+    color: #fff;
+    margin-left: 2em;
+}
+
+#Dentista h1 {
+    font-family: 'Grand Hotel', cursive;
+    font-size: 'Grand Hotel', cursive;
+    font-size: 90px;
+}
+
+#Dentista p {
+    font-family: 'Marvel', sans-serif;
+    width: 20em;
+    font-size: 42px;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+#Dentista h3 {
+    font-family: 'Marvel', sans-serif;
+    text-transform: bold;
+    font-size: 48px;
+}
+
+#Dentista .points {
+    filter: brightness(100);
+    position:absolute;
+    z-index: 999;
+    top: 120em;
+}
+
+#Dentista .points-2 {
+    filter: brightness(100);
+    position:absolute;
+    z-index: 999;
+    top: 75em;
+    right: 1em;
+}
+
+/* Section Services */
+
+#Servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
+}
+
+#Servicos h1 {
+    font-family: 'Marvel', sans-serif;
+    text-transform: bold;
+    font-size: 60px;
+}
+
+#Servicos .serv {
+    display: flex;
+    margin-top: 7em;
+    align-items: center;
+    justify-content: space-around;
+    width: 80em;
+}
+
+#Servicos .serv img {
+    width: 700px;
+    box-shadow: 15px 15px 1px #8B54FF;
+}
+
+#Servicos .serv p {
+    width: 25em;
+    margin-top: 3em;
+    font-size: 30px;
+    font-family: 'Marvel', sans-serif;
+}
+
+#Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7em;
+}
+
+#Servicos .d-points {
+    position: absolute;
+    left: 0;
+}
+
+#Servicos .d-points-2 {
+    position: absolute;
+    right: 0;
+    top: 185em;
+}
+
+/* Section Contato */
+
+#Contato {
+    background: #8B54FF;
+    margin-top: 7em;
 }

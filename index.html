@@ -9,6 +9,10 @@
     <title>BentechOdonto</title>
 
     <link rel="stylesheet" href="./assets/style/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bayon&family=Caveat:wght@400;500;600;700&family=Grand+Hotel&family=Marvel:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 <body>
 
@@ -19,21 +23,83 @@
 
     <!-- Estrutura do site -->
 
-    <header>
-        <nav class="topbar">
+    <main class="Main">
 
-            <div class="logo-top">
-                <img class="logo" src="./assets/imgs/dente-removebg-preview.png" alt="logo">
-                <span>BentechOdonto</span>
+        <header>
+            <nav class="topbar">
+                <a href="/index.html">
+                    <div class="logo-top">
+                        <img class="logo" src="./assets/imgs/dente-removebg-preview.png" alt="logo">
+                        <span>BentechOdonto</span>
+                    </div>
+                </a>
+                
+                <ul class="nav">
+                    <a href="#Home"><li>Início</li></a>
+                    <a href="#Dentista"><li>Dentista</li></a>
+                    <a href="#Servicos"><li>Serviços</li></a>
+                    <a href="#Contato"><li>Contato</li></a>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="Home">
+            <div class="texts">
+                <h1>CLÍNICA ODONTOLÓGICA</h1>
+                <h3>ESPECIALIZADA EM</h3>
+                <h5>Sáude e Estética Funcional</h5>
             </div>
+            <img class="main-photo" src="./assets/imgs/dentisita.png" alt="Dentista">
+            <img class="details" src="./assets/imgs/Details-home.png" alt="Details-home">
+        </section>
 
-            <ul>
-                li
-            </ul>
-        </nav>
-    </header>
+        <section id="Dentista">
+            <img class="points" src="./assets/imgs/Details-points_2.png" alt="">
+            <img class="points-2" src="./assets/imgs/Details-points_2.png" alt="">
+            <div class="main">
+                <img class="image" src="./assets/imgs/Photo-dentista.png" alt="Dentista">
+                <div class="texts">
+                    <h1>Dra. Renata da Silva</h1>
+                    <p>
+                        Cirurgiã dentista pela Universidade Federal Brasil,
+                        atuando no mercado há 10 anos, realizando
+                        tratamentos clínicos especializados, com ênfase 
+                        em implante dentário, prótese, e cirugia bucal.
+                    </p>
+                    <h3>CRM-12345-56</h3>
+                </div>
+            </div>
+        </section>
+
+        <section id="Servicos">
+            <h1>NOSSOS SERVIÇOS</h1>
+            <img class="d-points" src="./assets/imgs/Details-points_2.png" alt="">
+            <img class="d-points-2" src="./assets/imgs/Details-points_2.png" alt="">
+            <div class="serv">
+                <div class="servico-1">
+                    <img src="./assets/imgs/den_1.jpg" alt="Dent-1">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="servico-2">
+                    <img src="./assets/imgs/den_2.jpg" alt="Dent-2">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="Contato">
+            <h1>Agende Sua Consulta</h1>
+        </section>
+
+    </main>
     
     <script src="./assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 </html>
