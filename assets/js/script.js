@@ -1,11 +1,11 @@
-// $(".Main").hide();
+$(".Main").hide();
 
-// setTimeout(function() {
-//     $(".start").hide();
-//     $(".Main").show();
-// }, 3000);
+setTimeout(function() {
+    $(".start").hide();
+    $(".Main").show();
+}, 3000);
 
-$(".start").hide();
+$(".start").show();
 
 $('.nav a[href^="#"]').on('click', function(e) {
     e.preventDefault();

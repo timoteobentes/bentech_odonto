@@ -131,6 +131,7 @@
     background: #8B54FF;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #Dentista .main {
@@ -174,16 +175,15 @@
     position: absolute;
     z-index: 999;
     top: 81em;
-    width: 100px;
+    left: 0;
 }
 
 #Dentista .points-2 {
     filter: brightness(100);
-    position:absolute;
     z-index: 999;
-    top: 50em;
+    position:absolute;
+    top: 48em;
     right: 1em;
-    width: 100px;
 }
 
 /* Section Services */
