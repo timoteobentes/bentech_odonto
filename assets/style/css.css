@@ -32,7 +32,7 @@
 
     position: relative;
     top: 0;
-    height: 7em;
+    height: 5em;
 
     background: #8B54FF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -47,13 +47,13 @@
 }
 
 .logo-top img {
-    width: 200px;
+    width: 150px;
 }
 
 .logo-top span {
     font-family: 'Marvel', sans-serif;
     color: #fff;
-    font-size: 45px;
+    font-size: 2em;
     position: relative;
     top: 1.7em;
     left: -1.6em;
@@ -70,7 +70,7 @@
     align-items: center;
     justify-content: space-around;
     width: 15em;
-    font-size: 32px;
+    font-size: 1.5em;
     font-family: 'Marvel', sans-serif;
 }
 
@@ -94,32 +94,33 @@
 #Home .details {
     position: absolute;
     right: 0;
-    top: 55em;
+    top: 30em;
     z-index: -1;
 }
 
 #Home .texts {
     z-index: 999;
     text-align: center;
+    margin-top: 4em;
 }
 
 #Home .texts h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 75px;
+    font-size: 3em;
     color: #8B54FF;
     letter-spacing: 4px;
 }
 
 #Home .texts h3 {
     font-family: 'Bayon', sans-serif;
-    font-size: 42px;
+    font-size: 2em;
     letter-spacing: 2px;
     margin-top: -20px;
 }
 
 #Home .texts h5 {
     font-family: 'Caveat', cursive;
-    font-size: 45px;
+    font-size: 3em;
     margin-top: -10px;
 }
 
@@ -135,29 +136,29 @@
 #Dentista .main {
     display: flex;
     align-items: center;
-    margin-top: 7em;
+    margin-top: 2em;
 }
 
 #Dentista .image {
-    margin-left: 15em;
+    margin-left: 5em;
 }
 
 #Dentista .texts {
     text-align: center;
     color: #fff;
-    margin-left: 2em;
+    margin-left: 1em;
 }
 
-#Dentista h1 {
+#Dentista .texts h1 {
     font-family: 'Grand Hotel', cursive;
     font-size: 'Grand Hotel', cursive;
-    font-size: 90px;
+    font-size: 4em;
 }
 
-#Dentista p {
+#Dentista .texts p {
     font-family: 'Marvel', sans-serif;
     width: 20em;
-    font-size: 42px;
+    font-size: 2em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -165,22 +166,24 @@
 #Dentista h3 {
     font-family: 'Marvel', sans-serif;
     text-transform: bold;
-    font-size: 48px;
+    font-size: 3em;
 }
 
 #Dentista .points {
     filter: brightness(100);
-    position:absolute;
+    position: absolute;
     z-index: 999;
-    top: 120em;
+    top: 81em;
+    width: 100px;
 }
 
 #Dentista .points-2 {
     filter: brightness(100);
     position:absolute;
     z-index: 999;
-    top: 75em;
+    top: 50em;
     right: 1em;
+    width: 100px;
 }
 
 /* Section Services */
@@ -195,7 +198,7 @@
 #Servicos h1 {
     font-family: 'Marvel', sans-serif;
     text-transform: bold;
-    font-size: 60px;
+    font-size: 4em;
 }
 
 #Servicos .serv {
@@ -207,14 +210,14 @@
 }
 
 #Servicos .serv img {
-    width: 700px;
+    width: 400px;
     box-shadow: 15px 15px 1px #8B54FF;
 }
 
 #Servicos .serv p {
-    width: 25em;
+    width: 20em;
     margin-top: 3em;
-    font-size: 30px;
+    font-size: 1.5em;
     font-family: 'Marvel', sans-serif;
 }
 
@@ -232,12 +235,152 @@
 #Servicos .d-points-2 {
     position: absolute;
     right: 0;
-    top: 185em;
+    top: 135em;
 }
 
 /* Section Contato */
 
 #Contato {
-    background: #8B54FF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 7em;
+    background: #8B54FF;
+    font-family: 'Marvel', sans-serif;
+}
+
+#Contato h1 {
+    color: #fff;
+    text-transform: bold;
+    font-size: 4em;
+    margin-top: 1em;
+    filter: drop-shadow(0 7px 25px rgba(0, 0, 0, .5));
+}
+
+#Contato .more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3em;
+}
+
+#Contato .info {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contato .info a {
+    text-decoration: none;
+    color: #fff;
+    width: 13em;
+    font-size: 2em;
+    margin-bottom: .5em;
+    transition: .5s;
+}
+
+#Contato .info a:hover {
+    color: #341f61;
+}
+
+#Contato .form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#Contato .form form input,
+#Contato .form form textarea,
+#Contato .form form button {
+    font-size: 1.5em;
+    margin-bottom: .1em;
+    padding: .5em;
+    border-radius: .5em;
+    outline: none;
+    width: 20em;
+}
+
+textarea {
+    font-family: 'Marvel', sans-serif;
+}
+
+#Contato .form form button {
+    display: flex;
+    width: 5em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: 15em;
+    transition: .5s;
+}
+
+#Contato .form form button:hover {
+    background: #8B54FF;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #8B54FF;
+    font-family: 'Marvel', sans-serif;
+}
+
+footer .logo-bottom {
+    display: flex;
+}
+
+footer .logo-bottom img {
+    width: 300px;
+}
+
+footer .logo-bottom span {
+    font-family: 'Marvel', sans-serif;
+    color: #fff;
+    font-size: 4em;
+    position: relative;
+    margin-top: 1.7em;
+    left: -1.6em;
+    filter: drop-shadow(0 7px 25px rgba(0, 0, 0, .5));
+}
+
+footer span {
+    color: #fff;
+    font-size: 1.5em;
+    z-index: 999;
+    margin-bottom: 1.5em;
+}
+
+footer span a {
+    text-decoration: none;
+    color: #fff;
+    transition: .5s;
+}
+
+footer span a:hover {
+    color: #341f61;
+}
+
+footer .points-bottom-2 {
+    position: absolute;
+    top: 145em;
+    left: 1em;
+    filter: brightness(100);
+}
+
+footer .points-bottom {
+    position: absolute;
+    top: 185em;
+    right: 1em;
+    filter: brightness(100);
+}
+
+footer ion-icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 2em;
+    z-index: 999;
 }
