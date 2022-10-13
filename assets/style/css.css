@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    width: .5em;
+    height: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #8B54FF;
+    border-radius: .01em;
+}
+
 /* Inicialização do site */
 
 .start {
@@ -30,9 +44,11 @@
     align-items: center;
     padding: 0;
 
-    position: relative;
+    position: fixed;
     top: 0;
     height: 5em;
+    width: 100%;
+    z-index: 1000;
 
     background: #8B54FF;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -50,6 +66,10 @@
     width: 150px;
 }
 
+.menu {
+    display: none;
+}
+
 .logo-top span {
     font-family: 'Marvel', sans-serif;
     color: #fff;
@@ -64,7 +84,7 @@
     transition: 1s;
 }
 
-.topbar .nav{
+.topbar .nav {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -75,7 +95,7 @@
 }
 
 .topbar .nav a:hover {
-    color: #341f61;
+    color: #ba9afd;
 }
 
 /* Section Home */
@@ -87,40 +107,42 @@
 }
 
 #Home .main-photo {
-    margin-top: 7em;
+    margin-top: 10em;
     box-shadow: 45px -45px 1px #8B54FF;
+    width: 900px;
 }
 
 #Home .details {
     position: absolute;
     right: 0;
-    top: 30em;
+    top: 40em;
     z-index: -1;
 }
 
 #Home .texts {
     z-index: 999;
     text-align: center;
-    margin-top: 4em;
+    margin-top: 9em;
+    margin-right: 10em;
 }
 
 #Home .texts h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 3em;
+    font-size: 5em;
     color: #8B54FF;
     letter-spacing: 4px;
 }
 
 #Home .texts h3 {
     font-family: 'Bayon', sans-serif;
-    font-size: 2em;
+    font-size: 4em;
     letter-spacing: 2px;
     margin-top: -20px;
 }
 
 #Home .texts h5 {
     font-family: 'Caveat', cursive;
-    font-size: 3em;
+    font-size: 5em;
     margin-top: -10px;
 }
 
@@ -141,7 +163,7 @@
 }
 
 #Dentista .image {
-    margin-left: 5em;
+    width: 775px;
 }
 
 #Dentista .texts {
@@ -153,7 +175,7 @@
 #Dentista .texts h1 {
     font-family: 'Grand Hotel', cursive;
     font-size: 'Grand Hotel', cursive;
-    font-size: 4em;
+    font-size: 5em;
 }
 
 #Dentista .texts p {
@@ -359,7 +381,7 @@ footer span a {
 }
 
 footer span a:hover {
-    color: #341f61;
+    color: #9d6fff;
 }
 
 footer .points-bottom-2 {
@@ -383,4 +405,47 @@ footer ion-icon {
     color: #fff;
     font-size: 2em;
     z-index: 999;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 280px) and (max-width: 500px) {
+    .topbar {
+        width: 44%;
+    }
+
+    .menu {
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        color: #fff;
+        top: .4em;
+        right: .5em;
+        font-size: 3em;
+    }
+
+    .topbar .nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 12em;
+        background: #8B54FF;
+        position: absolute;
+        width: 15.7em;
+        height: 10em;
+    }
+
+    .topbar .nav a {
+        margin-top: 1em;
+    }
+
+    .topbar .nav a:last-child {
+        padding-bottom: 1em;
+    }
+
+    .on {
+        display: block;
+    }
+
+
+
 }

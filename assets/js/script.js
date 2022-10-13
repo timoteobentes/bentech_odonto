@@ -16,3 +16,10 @@ $('.nav a[href^="#"]').on('click', function(e) {
         scrollTop: targetOffset - 100
     }, 500);
 });
+
+const menu = document.querySelector(".menu");
+const nav = document.querySelector(".nav");
+
+menu.addEventListener("click", () => {
+    nav.classList.add("on");
+})
