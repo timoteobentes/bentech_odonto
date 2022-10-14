@@ -30,14 +30,14 @@
                 <div class="logo-top">
                     <img class="logo" src="./assets/imgs/dente-removebg-preview.png" alt="logo">
                     <span>BentechOdonto</span>
-                    <ion-icon class="menu" name="menu-outline"></ion-icon>
+                    <ion-icon class="menu" id="menu" name="menu-outline"></ion-icon>
                 </div>
                 
-                <ul class="nav">
-                    <a href="#Home"><li>Início</li></a>
-                    <a href="#Dentista"><li>Dentista</li></a>
-                    <a href="#Servicos"><li>Serviços</li></a>
-                    <a href="#Contato"><li>Contato</li></a>
+                <ul class="nav" id="nav">
+                    <a href="#Home" onclick="removeNav()"><li>Início</li></a>
+                    <a href="#Dentista" onclick="removeNav()"><li>Dentista</li></a>
+                    <a href="#Servicos" onclick="removeNav()"><li>Serviços</li></a>
+                    <a href="#Contato" onclick="removeNav()"><li>Contato</li></a>
                 </ul>
             </nav>
         </header>
@@ -120,13 +120,12 @@
         </section>
 
         <footer>
-            <ion-icon name="close-outline"></ion-icon>
-            <img class="points-bottom-2" src="./assets/imgs/Details-points_2.png" alt="Details-dentista">
-            <img class="points-bottom" src="./assets/imgs/Details-points_2.png" alt="Details-dentista">
             <div class="logo-bottom">
                 <img class="logo" src="./assets/imgs/dente-removebg-preview.png" alt="logo">
                 <span>BentechOdonto</span>
             </div>
+            <img class="details-bottom" src="./assets/imgs/Details-home.png" alt="Details-home">
+            <img class="details-bottom-2" src="./assets/imgs/Details-home.png" alt="Details-home">
             <span>Desenvolvido pela <a href="">@BENTECH</a></span>
         </footer>
 

@@ -1,7 +1,7 @@
 $(".Main").hide();
 
 setTimeout(function() {
-    $(".start").hide();
+    $(".start").fadeOut(800);
     $(".Main").show();
 }, 3000);
 
@@ -17,9 +17,13 @@ $('.nav a[href^="#"]').on('click', function(e) {
     }, 500);
 });
 
-const menu = document.querySelector(".menu");
-const nav = document.querySelector(".nav");
+const menu = document.querySelector("#menu");
+const nav = document.querySelector("#nav");
 
-menu.addEventListener("click", () => {
-    nav.classList.add("on");
+menu.addEventListener("click", function() {
+    nav.classList.toggle("visible");
 })
+
+function removeNav() {
+    nav.classList.remove("visible");
+}

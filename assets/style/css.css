@@ -92,6 +92,7 @@
     width: 15em;
     font-size: 1.5em;
     font-family: 'Marvel', sans-serif;
+    margin-right: 1em;
 }
 
 .topbar .nav a:hover {
@@ -123,19 +124,19 @@
     z-index: 999;
     text-align: center;
     margin-top: 9em;
-    margin-right: 10em;
+    margin-right: 3em;
 }
 
 #Home .texts h1 {
     font-family: 'Anton', sans-serif;
-    font-size: 5em;
+    font-size: 4.5em;
     color: #8B54FF;
     letter-spacing: 4px;
 }
 
 #Home .texts h3 {
     font-family: 'Bayon', sans-serif;
-    font-size: 4em;
+    font-size: 3.5em;
     letter-spacing: 2px;
     margin-top: -20px;
 }
@@ -196,7 +197,7 @@
     filter: brightness(100);
     position: absolute;
     z-index: 999;
-    top: 81em;
+    top: 92em;
     left: 0;
 }
 
@@ -204,7 +205,7 @@
     filter: brightness(100);
     z-index: 999;
     position:absolute;
-    top: 48em;
+    top: 57em;
     right: 1em;
 }
 
@@ -232,7 +233,7 @@
 }
 
 #Servicos .serv img {
-    width: 400px;
+    width: 550px;
     box-shadow: 15px 15px 1px #8B54FF;
 }
 
@@ -246,7 +247,6 @@
 #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
     display: flex;
     flex-direction: column;
-    margin-left: 7em;
 }
 
 #Servicos .d-points {
@@ -257,7 +257,7 @@
 #Servicos .d-points-2 {
     position: absolute;
     right: 0;
-    top: 135em;
+    top: 150em;
 }
 
 /* Section Contato */
@@ -289,6 +289,7 @@
 #Contato .info {
     display: flex;
     flex-direction: column;
+    margin-right: 3em;
 }
 
 #Contato .info a {
@@ -318,6 +319,7 @@
     border-radius: .5em;
     outline: none;
     width: 20em;
+    border: none;
 }
 
 textarea {
@@ -343,8 +345,8 @@ textarea {
 
 footer {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     background: #8B54FF;
     font-family: 'Marvel', sans-serif;
 }
@@ -371,7 +373,6 @@ footer span {
     color: #fff;
     font-size: 1.5em;
     z-index: 999;
-    margin-bottom: 1.5em;
 }
 
 footer span a {
@@ -393,26 +394,35 @@ footer .points-bottom-2 {
 
 footer .points-bottom {
     position: absolute;
-    top: 185em;
+    top: 175em;
     right: 1em;
+    width: 200px;
     filter: brightness(100);
 }
 
-footer ion-icon {
+.details-bottom {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    font-size: 2em;
-    z-index: 999;
+    left: -25em;
+    top: 192em;
+    filter: brightness(100);
 }
+
+.details-bottom-2 {
+    position: absolute;
+    right: -12em;
+    top: 155em;
+    object-fit: cover;
+    object-position: 34em;
+    filter: brightness(100);
+    transform: rotateZ(90deg);
+}
+
+
 
 /* Media Queries */
 
-@media screen and (min-width: 280px) and (max-width: 500px) {
-    .topbar {
-        width: 44%;
-    }
+@media screen and (min-width: 280px) and (max-width: 550px) {
+
 
     .menu {
         display: flex;
@@ -430,8 +440,14 @@ footer ion-icon {
         margin-top: 12em;
         background: #8B54FF;
         position: absolute;
-        width: 15.7em;
+        width: 100%;
         height: 10em;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .visible {
+        display: flex !important;
     }
 
     .topbar .nav a {
@@ -439,13 +455,844 @@ footer ion-icon {
     }
 
     .topbar .nav a:last-child {
-        padding-bottom: 1em;
+        padding-bottom: 1.5em;
     }
 
-    .on {
-        display: block;
+    #Home {
+        flex-direction: column;
+    }
+
+    #Home .main-photo {
+        width: 300px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 3em;
+    }
+
+    #Home .texts {
+        margin-right: 0;
+    }
+
+    #Home .texts h1 {
+        font-size: 1.5em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 1.2em;
+    }
+
+    #Home .texts h5 {
+        font-size: 1.5em;
     }
 
 
+    #Dentista, #Dentista .main {
+        flex-direction: column;
+    }
+
+    #Dentista .image {
+        width: 375px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 3em;
+    }
+
+    #Dentista .texts p {
+        width: 10em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        flex-direction: column;
+        width: 0;
+    }
+
+    #Servicos .serv img {
+        width: 300px;
+    }
+
+    #Servicos .serv p {
+        width: 12em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    .servico-2 {
+        margin-top: 3.5em;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more {
+        flex-direction: column;
+    }
+
+    #Contato .more a {
+        font-size: 1.5em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1em;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 750px) {
+
+
+    .menu {
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        color: #fff;
+        top: .4em;
+        right: .5em;
+        font-size: 3em;
+    }
+
+    .topbar .nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 12em;
+        background: #8B54FF;
+        position: absolute;
+        width: 100%;
+        height: 10em;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .visible {
+        display: flex !important;
+    }
+
+    .topbar .nav a {
+        margin-top: 1em;
+    }
+
+    .topbar .nav a:last-child {
+        padding-bottom: 1.5em;
+    }
+
+    #Home {
+        flex-direction: column;
+    }
+
+    #Home .main-photo {
+        width: 500px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 3em;
+    }
+
+    #Home .texts {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #Home .texts h1 {
+        font-size: 2em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 1.9em;
+    }
+
+    #Home .texts h5 {
+        font-size: 2.5em;
+    }
+
+
+    #Dentista, #Dentista .main {
+        flex-direction: column;
+    }
+
+    #Dentista .image {
+        width: 500px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 3em;
+    }
+
+    #Dentista .texts p {
+        width: 10em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        flex-direction: column;
+        width: 0;
+    }
+
+    #Servicos .serv img {
+        width: 450px;
+    }
+
+    #Servicos .serv p {
+        width: 19em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    .servico-2 {
+        margin-top: 3.5em;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more {
+        flex-direction: column;
+    }
+
+    #Contato .more a {
+        font-size: 1.8em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1.5em;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+
+    .menu {
+        display: flex;
+        position: absolute;
+        z-index: 2000;
+        color: #fff;
+        top: .4em;
+        right: .5em;
+        font-size: 3em;
+    }
+
+    .topbar .nav {
+        display: none;
+        flex-direction: column;
+        margin-top: 12em;
+        background: #8B54FF;
+        position: absolute;
+        width: 100%;
+        height: 10em;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .visible {
+        display: flex !important;
+    }
+
+    .topbar .nav a {
+        margin-top: 1em;
+    }
+
+    .topbar .nav a:last-child {
+        padding-bottom: 1.5em;
+    }
+
+    #Home {
+        flex-direction: column;
+    }
+
+    #Home .main-photo {
+        width: 500px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 3em;
+    }
+
+    #Home .texts {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #Home .texts h1 {
+        font-size: 2em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 1.9em;
+    }
+
+    #Home .texts h5 {
+        font-size: 2.5em;
+    }
+
+
+    #Dentista, #Dentista .main {
+        flex-direction: column;
+    }
+
+    #Dentista .image {
+        width: 500px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 3em;
+    }
+
+    #Dentista .texts p {
+        width: 17em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        flex-direction: column;
+        width: 0;
+    }
+
+    #Servicos .serv img {
+        width: 450px;
+    }
+
+    #Servicos .serv p {
+        width: 19em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    .servico-2 {
+        margin-top: 3.5em;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more {
+        flex-direction: column;
+    }
+
+    #Contato .more a {
+        font-size: 1.8em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1.5em;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1250px) {
+
+    #Home .main-photo {
+        width: 500px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 10em;
+    }
+
+    #Home .texts {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    #Home .texts h1 {
+        font-size: 2.5em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 2.4em;
+    }
+
+    #Home .texts h5 {
+        font-size: 2.7em;
+    }
+
+
+    #Dentista .image {
+        width: 500px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 3em;
+    }
+
+    #Dentista .texts p {
+        width: 17em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        width: 100%;
+        align-items: center;
+    }
+
+    #Servicos .serv img {
+        width: 450px;
+    }
+
+    #Servicos .serv p {
+        width: 19em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more a {
+        font-size: 1.8em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1.5em;
+    }
+
+    .points-bottom-2, .points-bottom {
+        display: none;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1250px) and (max-width: 1500px) {
+
+    #Home .main-photo {
+        width: 500px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 10em;
+    }
+
+    #Home .texts {
+        margin-right: 5em;
+        text-align: center;
+    }
+
+    #Home .texts h1 {
+        font-size: 3em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 2.4em;
+    }
+
+    #Home .texts h5 {
+        font-size: 3em;
+    }
+
+
+    #Dentista .image {
+        width: 500px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 3em;
+    }
+
+    #Dentista .texts p {
+        width: 17em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        width: 100%;
+        align-items: center;
+    }
+
+    #Servicos .serv img {
+        width: 450px;
+    }
+
+    #Servicos .serv p {
+        width: 19em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more a {
+        font-size: 1.8em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1.5em;
+    }
+
+    .points-bottom-2, .points-bottom {
+        display: none;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1750px) {
+
+    #Home .main-photo {
+        width: 700px;
+        box-shadow: 20px -20px 1px #8B54FF;
+        margin-top: 10em;
+    }
+
+    #Home .texts {
+        margin-right: 5em;
+        text-align: center;
+    }
+
+    #Home .texts h1 {
+        font-size: 3.5em;
+    }
+
+    #Home .texts h3 {
+        margin-top: -10px;
+        font-size: 2.4em;
+    }
+
+    #Home .texts h5 {
+        font-size: 3.5em;
+    }
+
+
+    #Dentista .image {
+        width: 700px;
+    }
+
+    #Dentista .texts h1 {
+        font-size: 4.5em;
+    }
+
+    #Dentista .texts p {
+        width: 17em;
+    }
+
+    #Dentista h3 {
+        font-size: 2em;
+        padding-bottom: 2em;
+    }
+
+    #Dentista .points {
+        top: 95em;
+        left: -6em;
+    }
+
+    #Dentista .points-2 {
+        display: none;
+    }
+
+
+
+    #Servicos h1 {
+        text-align: center;
+    }
+
+    #Servicos .serv {
+        width: 100%;
+        align-items: center;
+    }
+
+    #Servicos .serv img {
+        width: 450px;
+    }
+
+    #Servicos .serv p {
+        width: 19em;
+    }
+
+    #Servicos .serv .servico-1, #Servicos .serv .servico-2 {
+        margin-left: 0;
+    }
+
+    #Servicos .d-points,
+    #Servicos .d-points-2 {
+        display: none;
+    }
+
+
+    #Contato h1 {
+        text-align: center;
+    }
+
+    #Contato .more a {
+        font-size: 1.8em;
+    }
+
+    #Contato .form form {
+        margin-top: 1.5em;
+    }
+
+    #Contato .form form input,
+    #Contato .form form textarea,
+    #Contato .form form button {
+        font-size: 1.5em;
+    }
+
+    .points-bottom-2, .points-bottom {
+        display: none;
+    }
+
+
+    footer .logo-bottom img {
+        width: 150px;
+    }
+
+    footer .logo-bottom span {
+        font-size: 2em;
+    }
+
+    footer span {
+        font-size: 1em;
+    }
+
+    .details-bottom, .details-bottom-2 {
+        display: none;
+    }
 
 }
