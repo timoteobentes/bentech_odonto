@@ -557,6 +557,10 @@ footer .points-bottom {
         flex-direction: column;
     }
 
+    #Contato .info {
+        margin-right: 0;
+    }
+
     #Contato .more a {
         font-size: 1.5em;
     }
@@ -732,6 +736,10 @@ footer .points-bottom {
         flex-direction: column;
     }
 
+    #Contato .info {
+        margin-right: 0;
+    }
+
     #Contato .more a {
         font-size: 1.8em;
     }
@@ -905,6 +913,10 @@ footer .points-bottom {
 
     #Contato .more {
         flex-direction: column;
+    }
+
+    #Contato .info {
+        margin-right: 0;
     }
 
     #Contato .more a {
