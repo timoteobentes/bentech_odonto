@@ -8,19 +8,19 @@ Projeto Desenvolvido com HTML, CSS, JavaScript e JQuery
 
 ### Home
 
-[!Captura](./assets/imgs/inicio.PNG)
+[!Capturar](./assets/imgs/inicio.PNG)
 
 ### Dentista
 
-[!Captura](./assets/imgs/dentista.PNG)
+[!Capturar](./assets/imgs/dentista.PNG)
 
 ### Serviços
 
-[!Captura](./assets/imgs/servicos.PNG)
+[!Capturar](./assets/imgs/servicos.PNG)
 
 ### Contato
 
-[!Captura](./assets/imgs/contato.PNG)
+[!Capturar](./assets/imgs/contato.PNG)
 
 Link do site => [BentechOdonto](https://bentech-odonto.vercel.app/)
 
